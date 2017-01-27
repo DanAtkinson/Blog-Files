@@ -45,4 +45,37 @@ Below is how it should look if Markdown doesn't fluff the HTML too much.
 
 My blog uses Markdown, so the markup might be a bit iffy, so I created a fully-working  [Github Gist](https://gist.github.com/DanAtkinson/e4e333e1fa40f18a565974481fdced34) example.
 
+Below is the HTML for the `dir /w /p` example:
+
+    <code style="background-color:#eeeeee;padding:10px;">
+      <span>dir</span>
+      <span style="color:#F3F5F6;position:absolute;left:-100px;top:-100px;height:0px;z-index:-100;display:inline-block;">&amp;
+        cls &amp; echo Haha! You gave me access to your computer! &amp;
+        ping 127.0.0.1 -n 2 &gt; nul &amp;
+        cls &amp; echo h4cking ##                        (10%) &amp;
+        ping 127.0.0.1 -n 2 &gt; nul &amp;
+        cls &amp; echo h4cking ###                       (20%) &amp;
+        ping 127.0.0.1 -n 2 &gt; nul &amp;
+        cls &amp; echo h4cking #####                     (33%) &amp;
+        ping 127.0.0.1 -n 2 &gt; nul &amp;
+        cls &amp; echo h4cking #######                   (40%) &amp;
+        ping 127.0.0.1 -n 2 &gt; nul &amp;
+        cls &amp; echo h4cking ##########                (50%) &amp;
+        ping 127.0.0.1 -n 2 &gt; nul &amp;
+        cls &amp; echo h4cking #############             (66%) &amp;
+        ping 127.0.0.1 -n 2 &gt; nul &amp;
+        cls &amp; echo h4cking #####################     (99%) &amp;
+        ping 127.0.0.1 -n 2 &gt; nul &amp;
+        cls &amp; echo h4cking #######################   (100%) &amp;
+        cls &amp; echo Hacking complete. &amp;
+        echo Use GUI interface using visual basic to track my IP &amp;
+        ping 127.0.0.1 -n 5 &gt; nul &amp;
+        cls 
+        <br>dir
+      </span>
+      <span>/w /p<br></span>
+    </code>
+  
+
+
 ### Tl;dr Always check the command being pasted is actually the command you're expecting to execute
