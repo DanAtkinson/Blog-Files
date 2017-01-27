@@ -1,15 +1,14 @@
 title: How to hack a trusting Windows developer's machine
 author: Dan Atkinson
-date: 2017-01-26 22:49:14
-tags:
+tags: []
+categories: []
+date: 2017-01-26 22:49:00
 ---
 This is based on a post on [Life Plus Linux](https://lifepluslinux.blogspot.co.uk/2017/01/look-before-you-paste-from-website-to.html) entitled `Look before you paste from website to terminal`.
 
 The post detailed a very simple but cleverly crafted method of giving the user a seemingly benign string to execute into their Linux terminal window.
 
 In this instance, the command looked like `ls -lat`. This shows all files in the current directory ordered by date. However, between `ls` and `-lat` was some hidden text which, when pasted directly into the terminal, did something quite interesting.
-
-![](https://i.imgur.com/wAsCWqP.gif)
 
 I wondered to myself whether this was possible on Windows and so I set about doing exactly that. About 5 minutes later (yes, it wasn't that hard) I came up with the following [example](https://gist.github.com/DanAtkinson/e4e333e1fa40f18a565974481fdced34) which you can try out for yourself. Go ahead and copy and paste the below code sample into your command prompt!
 
@@ -37,15 +36,14 @@ I wondered to myself whether this was possible on Windows and so I set about doi
       cls 
       dir </span><span>/w /p<br></span></code>
 
-I promise you that ***this*** example is benign, but you should check the contents of your clipboard just to be sure.
+I promise you that ***this*** example is benign, but you should check the contents of your clipboard just to be sure. Below is how it should look if my Markdown blog doesn't fluff the HTML too much.
 
-Below is how it should look if Markdown doesn't fluff the HTML too much.
+![](https://i.imgur.com/XpkoqnJ.gif)
 
-![](http://i.imgur.com/XpkoqnJ.gif)
 
-My blog uses Markdown, so the markup might be a bit iffy, so I created a fully-working  [Github Gist](https://gist.github.com/DanAtkinson/e4e333e1fa40f18a565974481fdced34) example.
+I also created a fully-functioning  [Github Gist](https://gist.github.com/DanAtkinson/e4e333e1fa40f18a565974481fdced34) example which you can try locally.
 
-Below is the HTML for the `dir /w /p` example:
+And, if you're interested, here is the HTML for the `dir /w /p` example:
 
     <code style="background-color:#eeeeee;padding:10px;">
       <span>dir</span>
